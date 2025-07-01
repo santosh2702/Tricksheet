@@ -1,0 +1,124 @@
+# Summary of Learning
+
+Here’s a full **summary of all the programming foundations** you’ve learned so far — perfect for keeping in your notes:
+
+---
+
+### 🧮 **Basic Problem Solving Concepts**
+
+- **Factorial**: `n! = n × (n-1) × ... × 1`, solved using loops or recursion.
+- **Fibonacci**: Sequence where `F(n) = F(n-1) + F(n-2)`, starting with 0 and 1.
+- **Sum of Digits**: Add all digits in a number using loops or recursion.
+
+---
+
+### 📦 **Data Structures (Intro Level)**
+
+- **List**: Ordered, mutable collection → supports indexing, slicing, iteration.
+- **Array**:
+    - **1D Array**: Linear list of elements.
+    - **Multidimensional Array**: Nested arrays (e.g., matrix).
+    - **Dynamic Array**: Grows as needed (Python list behaves this way).
+- **Tuple**: Ordered, immutable collection (like a constant list).
+- **Dictionary**: Key-value pairs; fast lookup using keys.
+    - `print(f"{key}: {value}")` – for neat key-value output.
+- **Set**: Unordered, unique values; great for membership tests and removing duplicates.
+
+---
+
+### 🔡 **String Manipulation**
+
+- **Slicing**: `text[start:end]` → extracts substring.
+- **Searching**: `in`, `.find()`, `.index()` to locate substrings.
+- **Replacing**: `.replace("old", "new")`
+- **Reversing**:
+    - With slicing: `text[::-1]`
+    - With loop:
+        
+        ```python
+        reversed = ""
+        for char in text:
+            reversed = char + reversed
+        
+        ```
+        
+
+---
+
+### 🔁 **Recursion**
+
+- Function that calls itself to solve a smaller subproblem.
+- Needs a **base case** to stop recursion.
+- Examples: factorial, sum of digits, Fibonacci.
+- Structure:
+    
+    ```python
+    def func(n):
+        if base_case:
+            return result
+        return smaller_part + func(smaller_input)
+    
+    ```
+    
+
+---
+
+### 🧯 **Error Handling**
+
+- Use `try`–`except` blocks to handle errors without crashing.
+- Syntax:
+    
+    ```python
+    try:
+        # risky code
+    except ErrorType:
+        # handle it
+    
+    ```
+    
+- Also: `else` (if no error), `finally` (always runs)
+
+### Common Exception Types:
+
+- `ValueError`, `TypeError`, `IndexError`, `KeyError`, `ZeroDivisionError`, `FileNotFoundError`
+
+---
+
+### 📁 **File Handling**
+
+### `.txt` Files:
+
+- Read: `.read()`, `.readline()`, `.readlines()`
+- Write: `.write()`
+- Use `with open(...)` for auto-closing
+
+### `.csv` Files (using `csv` module):
+
+- `csv.reader()` to read rows
+- `csv.writer()` to write rows
+- `csv.DictReader()` to read as dictionaries
+
+---
+
+### ⏱️ **Time & Space Complexity**
+
+- **Time Complexity**: Measures how the number of steps grows with input size.
+- **Space Complexity**: Measures memory usage as input grows.
+
+### Common Complexities:
+
+| Name | Time |
+| --- | --- |
+| Constant | `O(1)` |
+| Logarithmic | `O(log n)` |
+| Linear | `O(n)` |
+| Linearithmic | `O(n log n)` |
+| Quadratic | `O(n²)` |
+| Exponential | `O(2ⁿ)` |
+
+> You also saw a visual graph comparing these complexities.
+> 
+
+---
+
+Would you like this summary exported as a **PDF**, or want a **quiz** to test your learning next?
